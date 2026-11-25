@@ -32,6 +32,8 @@ Open [localhost on port 8080](http://localhost:8080). The first startup creates 
 
 ## Deployment
 
+[Deploy this repository to Render](https://render.com/deploy?repo=https://github.com/LIKITHSAIREDDY1/wardbook-patient-admissions). Enter the Neon JDBC URL, role, and password when prompted.
+
 Push this folder as the root of a public GitHub repository. Create a Docker web service from the repository on a Java-capable host. Set the three Neon variables above in the host's secrets settings. The Dockerfile builds React and packages it inside the Java jar. The server uses the host's `PORT` variable or port 8080. Once deployed, test adding and editing a fictional patient and replace the pending live link above. Use fictional records on the public demo.
 
 ## Screenshots
