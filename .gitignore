@@ -1,0 +1,9 @@
+node_modules/
+target/
+src/main/resources/static/
+.env*
+!.env.example
+*.log
+.idea/
+.vscode/
+.qa/

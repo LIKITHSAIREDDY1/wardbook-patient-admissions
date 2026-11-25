@@ -1,0 +1,7 @@
+.git
+.qa
+frontend/node_modules
+src/main/resources/static
+target
+.env*
+docs

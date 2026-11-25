@@ -1,0 +1,1 @@
+{"name":"admissions-ui","private":true,"scripts":{"dev":"vite","build":"vite build --outDir ../src/main/resources/static --emptyOutDir"},"dependencies":{"react":"19.2.0","react-dom":"19.2.0"},"devDependencies":{"vite":"6.4.1"}}

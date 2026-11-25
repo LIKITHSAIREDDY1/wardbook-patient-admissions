@@ -1,0 +1,58 @@
+:root {font: 100%/1.45 "Segoe UI", sans-serif; color:#193e3a; background:#f3f7f6}
+* {box-sizing:border-box}
+body {margin:0}
+.wrap {width:min(1180px,92%); margin:auto}
+header {background:#103f3c; color:white}
+.brand {display:flex; align-items:center; gap:.7rem; height:68px; font-size:1.32rem; font-weight:650}
+.cross {display:grid; place-items:center; width:34px; height:34px; background:#a9e3d4; color:#174b43; border-radius:9px}
+main {padding:2.8rem 0}
+.heading,.register-head,footer,.actions {display:flex; align-items:center; justify-content:space-between; gap:.65rem}
+h1,h2,p {margin:0}
+h1 {font-size:clamp(1.85rem,4vw,2.75rem); letter-spacing:-.045em}
+h2 {font-size:1.35rem; letter-spacing:-.025em}
+button,input,select {font:inherit}
+button {border:1px solid #b6c9c4; background:white; color:#204d45; border-radius:7px; padding:.48rem .8rem; cursor:pointer}
+button:hover {background:#eaf4ef}
+button:disabled {opacity:.55; cursor:default}
+button.primary {background:#126452; border-color:#126452; color:white; font-weight:600}
+button.primary:hover {background:#0a5142}
+.stats {display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin:1.6rem 0}
+.stats div,.register {background:#fff; border:1px solid #ceddd8; border-radius:12px}
+.stats div {padding:1.15rem 1.4rem}
+.stats div:nth-child(2) {background:#e3f4eb}
+.stats span,small {color:#526a64}
+.stats strong {display:block; font-size:2rem; font-weight:650}
+.register {padding:1.5rem}
+.filters,.form-grid {display:grid; gap:1rem; margin:1.25rem 0}
+.filters {grid-template-columns:1.4fr repeat(3,1fr)}
+label {display:grid; gap:.35rem; font-size:.9rem; font-weight:600}
+input,select {width:100%; min-width:0; padding:.62rem; border:1px solid #afc4bc; border-radius:6px; color:#213f38; background:white; font-size:1rem; font-weight:400}
+table {width:100%; border-collapse:collapse; text-align:left}
+td,th {padding:.85rem .55rem; border-bottom:1px solid #dce7e2}
+th {font-size:.87rem; color:#48615b; background:#f1f6f3}
+small {display:block; margin-top:.22rem; font-size:.86rem}
+.badge {display:inline-block; padding:.25rem .6rem; border-radius:20px; background:#eef0f2; font-size:.875rem}
+.Admitted {background:#d9f3e5; color:#235e40}
+.actions {justify-content:start; flex-wrap:wrap; gap:.3rem}
+.actions button {font-size:.875rem; padding:.35rem .55rem}
+.danger,[role=alert] {color:#942e37}
+.remove {background:#992f39; color:white}
+.empty {text-align:center; padding:3rem 1rem; border-top:1px solid #dce7e2; color:#536963}
+dialog {width:min(530px,92vw); max-height:90vh; border:0; border-radius:14px; padding:1.6rem; color:inherit}
+dialog::backdrop {background:#102c28a6}
+dialog p {margin:1rem 0}
+.form-grid {grid-template-columns:1fr 1fr}
+footer {justify-content:end; margin-top:1rem}
+:focus-visible {outline:3px solid #379988; outline-offset:2px}
+@media(max-width:850px) {
+ .filters {grid-template-columns:1fr 1fr}
+ table,tbody,tr,td {display:block} thead {display:none}
+ tr {border-top:1px solid #ceddd8; padding:.8rem 0; display:grid; grid-template-columns:1fr 1fr; align-items:start}
+ td {border:0; padding:.3rem} td:last-child {grid-column:1/-1}
+ td[data-label]::before {content:attr(data-label); display:block; font-size:.85rem; color:#526a64}
+}
+@media(max-width:520px) {
+ main {padding:1.5rem 0} .heading {align-items:start; flex-direction:column}
+ .stats {gap:.4rem; margin:1rem 0} .stats div {padding:.7rem} .stats span {font-size:.85rem}
+ .register {padding:1rem} .filters,.form-grid {gap:.7rem} .form-grid {grid-template-columns:1fr}
+}
